@@ -1,0 +1,205 @@
+*{
+	padding:0; margin:0;
+}
+html{
+	background:#010101 url(images/html-bg.png) right top no-repeat; height:100%;
+}
+body{
+	height:auto!important;
+	height:100%;
+	min-height:100%;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#151515+0,151515+100&0+48,1+65,1+100 */
+	background: -moz-linear-gradient(top, rgba(21,21,21,0) 0%, rgba(21,21,21,0) 670px, rgba(21,21,21,1) 830px, rgba(21,21,21,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(21,21,21,0) 0%,rgba(21,21,21,0) 670px,rgba(21,21,21,1) 830px,rgba(21,21,21,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(21,21,21,0) 0%,rgba(21,21,21,0) 670px,rgba(21,21,21,1) 830px,rgba(21,21,21,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00151515', endColorstr='#151515',GradientType=0 ); /* IE6-9 */
+	font-family:Arial, Helvetica, sans-serif;
+	line-height:1.5;
+}
+img{
+	border:0;
+}
+a{
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:underline;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+.karkas{
+	width:960px; margin:0 auto;
+}
+	.header{
+		margin:0 0 20px 0;
+	}
+	.logo{
+		margin: 190px 0 0 20px;
+	}
+	.menu{
+		margin: 230px 0 0 0; list-style:none; background:rgba(0,0,0,0.6); padding-top: 11px;
+	}
+	.menu:after{
+		content:"";
+		clear:both;
+		display:block;
+	}
+		.menu li{
+			float:left; font-size:17px; margin:10 10px 0 10px; line-height:1;
+		}
+		.menu li:first-child{
+			float:left; font-size:17px; margin:10 10px 0 0; line-height:1;
+		}
+			.menu li a{
+				color:#f3f3f3; text-transform:uppercase; padding:10px 15px 20px 15px; display:block;
+			}
+			a.active{
+				background:#232323; border-radius:5px 5px 0 0;
+			}
+	.content-main-bocks:after{
+		content:"";
+		clear:both;
+		display:block;
+	}
+	.content-main-bocks div{
+		float:left; width:277px; margin: 0 21px;
+		
+	}
+		.read-more{
+			color:#000000!important; padding:1px 7px 3px 7px; background:#444444; font-weight:bold;
+		}
+	.content-main{
+		color:#565656; font-size:13px; padding:0 0 30px 0;
+	}
+	.content-main img{
+		border:2px solid #151515; margin-bottom:20px; display:block;
+	}
+	.content-main:after{
+		content:"";
+		clear:both;
+		display:both;
+	}
+	.content-main a{
+		color:#777777;
+	}
+	.content-main p{
+		margin-bottom:20px;
+	}
+	.content-main h1{
+		color:#dbdada; font-size:17px; border-bottom:1px solid #dbdada; margin-bottom:20px; padding-bottom:5px;
+	}
+	.content-main h1 a{
+		color:#dbdada
+	}
+.footer-wrapper{
+	background:#080808; border-bottom:4px solid #151515;
+}
+	.footer-main{
+		width:960px; margin:0 auto; padding:13px 0 6px 0;
+	}
+	.footer-main:after{
+		content:"";
+		clear:both;
+		display:block;
+	}
+	.footer-left{
+		float:left;
+	}
+		.footer-left img{
+			float:left;
+		}
+		.footer-left p{
+			float:left; color:#fefcfc; font-size:14px; padding:14px 0 0 7px;
+		}
+		.footer-left p a{
+			color:#fefcfc;
+		}
+	.footer-right{
+		float:right;
+	}
+	.footer-right img{
+		margin:0 4px;
+	}
+	.footer-right a:last-child{
+		margin-right: 23px;
+	}
+	
+/* Exibition page*/
+.ex-place, .ex-date, .ex-ticket{
+	padding: 0 0 0 35px;
+}
+.ex-place{
+	background:url(images/ex-home.png) no-repeat left 50%;
+}
+.ex-date{
+	background:url(images/ex-date.png) no-repeat left 50%;
+}
+.ex-ticket{
+	background:url(images/ex-ticket.png) no-repeat left 50%;
+}
+.menu-ex{
+	margin: 230px 0 67px 0;
+}
+
+/* About me page*/
+.content-main:after{
+	content:"";
+	clear:both;
+	display:block;
+}
+.content-left{
+	float:left; width:607px; padding: 0 20px 0 10px;
+}
+.sidebar{
+	float:right; width:283px; margin-right:21px;
+}
+.img-left{
+	float:left; margin: 0 20px 0 0 !important;
+}
+
+/* contact page*/
+.contact-form{
+	
+}
+	.contact-form p{
+		font-size:17px; color:#565656;
+	}
+	.contact-form label{
+		width:150px; display:block; float:left;
+	}
+	.contact-form input[type=text]{
+		width:300px; padding:6px 20px; background:rgba(0,0,0,0.6); border:1px solid rgba(0,0,0,0.6); color:#fff; font-size:17px; border-radius:10px;
+	}
+	.contact-form textarea{
+		width:410px; height:150px; padding:6px 20px; background:rgba(0,0,0,0.6); border:1px solid rgba(0,0,0,0.6); color:#fff; font-size:17px; border-radius:10px; resize:none;
+	}
+	input:focus{
+		border:1px solid #484848!important; outline: none;
+	}
+	textarea:focus{
+		border:1px solid #484848!important; outline: none;
+	}
+	.contact-address, .contact-phone, .contact-mail, .contact-liciense{
+		padding:0 0 0 30px;
+	}
+	.contact-address{
+		background:url(images/ex-home.png) 0 50% no-repeat;
+	}
+	.contact-phone{
+		background:url(images/tel.png) 0 50% no-repeat;
+	}
+	.contact-mail{
+		background:url(images/mail.png) 0 50% no-repeat;
+	}
+	.contact-liciense{
+		background:url(images/reg.png) 0 50% no-repeat;
+	}
+/*		PORTFOLIO page	*/
+
+.portfolio-image{
+	float:left; margin:0 0 30px 0;
+}
+.portfolio-image:nth-child(2n){
+	float:right;
+}
