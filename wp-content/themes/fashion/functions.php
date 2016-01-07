@@ -15,6 +15,17 @@ register_sidebar(array(
     'description' => 'Добавьте слайдер через виджет текст',
 ));
 
+/**
+ * социальные иконки в футере
+ * **/
+register_sidebar(array(
+    'name' => 'Футер',
+    'id' => 'footer',
+    'before_widget' => '',
+    'after_widget' => '',
+    'description' => 'Добавьте добавьте ссылки на социальные сети',
+));
+
 /*
 * Убрать [...] в the_excerpt();
 */
