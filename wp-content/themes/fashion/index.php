@@ -20,13 +20,17 @@
         if ( $page_index->have_posts() ) :
             while ( $page_index->have_posts() ) : $page_index->the_post();?>
 			<div>
-<!--				<a href="#"><img src="<?php bloginfo('template_url');?>/images/foto1.jpg" alt="" /></a>-->
+                <a href="<?php the_permalink();?>"><?php the_post_thumbnail('full'); ?></a>
                 <h1><a href="<?php the_permalink();?>"><?php echo get_post_meta(get_the_ID(), 'title', true);//вывести нужный заголовок?></a></h1>
 				<?php the_excerpt();//вывести цитату?>
 				<p><a href="<?php the_permalink();?>" class="read-more">read more</a></p>
 			</div>
            <?php endwhile;?>
         <?php else : ?>
+            <div>
+                <p>Добавте к страницам/записям произвольное поле "title" с необходимом заголовком для вывода на главную страницу</p>
+                <p>Второе произвольное поле "order" будет использовано для сортировки</p>
+            </div>
         <?php endif;?>
         
         </div>
