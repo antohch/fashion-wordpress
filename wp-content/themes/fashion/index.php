@@ -1,11 +1,10 @@
 <?php get_header();?>
 	<div class="content-main">
-		<ul id="carousel" class="elastislide-list">
-			<li><a href="#"><img src="<?php bloginfo('template_url');?>/images/small/1.png" alt="image01" /></a></li>
-			<li><a href="#"><img src="<?php bloginfo('template_url');?>/images/small/2.png" alt="image02" /></a></li>
-			<li><a href="#"><img src="<?php bloginfo('template_url');?>/images/small/3.png" alt="image03" /></a></li>
-			<li><a href="#"><img src="<?php bloginfo('template_url');?>/images/small/4.png" alt="image04" /></a></li>
+        <?php if(!dynamic_sidebar('slider_index')):?>
+        <ul id="carousel" class="elastislide-list">
+			<li><a href="#">Место для карусели</a></li>
 		</ul>
+        <?php endif;?>
 		<div class="content-main-bocks">
 			<div>
 				<a href="#"><img src="<?php bloginfo('template_url');?>/images/foto1.jpg" alt="" /></a>
