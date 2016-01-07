@@ -5,28 +5,31 @@
 			<li><a href="#">Место для карусели</a></li>
 		</ul>
         <?php endif;?>
-		<div class="content-main-bocks">
+        <div class="content-main-bocks">
+        <?php
+        $args = array(
+            'post_type' => array('post', 'page'),//выводить и записи и страницы
+            'meta_key' => 'order',//выводить только те записи, что имеют произвольное поле order
+            'orderby' => 'meta_value_num',//сортировать
+            'order' => 'ASC',//сортировать во возростанию
+            'posts_per_page' => 3,//выводить только три записи
+        );
+        $page_index = new WP_Query($args);
+        ?>
+        <?php
+        if ( $page_index->have_posts() ) :
+            while ( $page_index->have_posts() ) : $page_index->the_post();?>
 			<div>
-				<a href="#"><img src="<?php bloginfo('template_url');?>/images/foto1.jpg" alt="" /></a>
-				<h1><a href="#">Hi, My Name Is Anne Photographer</a></h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisi odio, sollicitudin at condimentum at, mattis a ligula.</p> 
-				<p>Ut vitae urna quis massa consectetur cursus ultricies in tellus. Aliquam sed odio in neque mattis laoreet. Cras lacus purus,</p>
-				<p><a href="#" class="read-more">read more</a></p>
+<!--				<a href="#"><img src="<?php bloginfo('template_url');?>/images/foto1.jpg" alt="" /></a>-->
+                <h1><a href="<?php the_permalink();?>"><?php echo get_post_meta(get_the_ID(), 'title', true);//вывести нужный заголовок?></a></h1>
+				<?php the_excerpt();//вывести цитату?>
+				<p><a href="<?php the_permalink();?>" class="read-more">read more</a></p>
 			</div>
-			<div>
-				<a href="#"><img src="<?php bloginfo('template_url');?>/images/foto2.jpg" alt="" /></a>
-				<h1><a href="#">Exhibition Now On</a></h1>
-				<p>Nam egestas sapien molestie lorem auctor eget scelerisque neque tincidunt. Ut iaculis leo non sem can <a href="#">this is an inline link</a>. Maecenas mi massa, interdum at sagittis eu, imperdiet a dui. Duis sit amet tortor leo. Fusce tempor pellentesque mollis. Sed tincidunt elit sit amet ipsum fermentum venenatis.</p>
-				<p><a href="#" class="read-more">read more</a></p>
-			</div>
-			<div>
-				<a href="#"><img src="<?php bloginfo('template_url');?>/images/foto3.jpg" alt="" /></a>
-				<h1><a href="#">Latest Photo Shoot</a></h1>
-				<p>Donec mollis suscipit nisi, vitae sagittis arcu euismod at. In at turpis vel odio fringilla vulputate at ac tellus. Phasellus nulla leo, vehicula sit amet congue eget, viverra ut augue epharetra aliquet turpis vel scelerisque. 
-				Nullam ut enim nisi. Vivamus ut neque nulla. est aliquam consectetur augue et est dapibus ;</p>
-				<p><a href="#" class="read-more">read more</a></p>
-			</div>
-		</div>
+           <?php endwhile;?>
+        <?php else : ?>
+        <?php endif;?>
+        
+        </div>
 	</div>
 </div>
 <?php get_footer(); ?>                                               
