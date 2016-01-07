@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6{
 			.menu li a{
 				color:#f3f3f3; text-transform:uppercase; padding:10px 15px 20px 15px; display:block;
 			}
-			a.active{
+			li.current-menu-item{
 				background:#232323; border-radius:5px 5px 0 0;
 			}
 	.content-main-bocks:after{
