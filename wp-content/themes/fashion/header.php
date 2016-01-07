@@ -15,11 +15,15 @@
 <div class="karkas">
 	<div class="header">
 		<a href="/"><img src="<?php bloginfo('template_url');?>/images/logo.png" class="logo" alt="Fashion photographer"/></a>
-		<ul class="menu">
+<!--		<ul class="menu">
 			<li><a href="#" class="active">HOME</a></li>
 			<li><a href="#">ABOUT ME</a></li>
 			<li><a href="#">PORTFOLIO</a></li>
 			<li><a href="#">EXHIBITIONS</a></li>
 			<li><a href="#">CONTACT ME</a></li>
-		</ul>
+		</ul>-->
+        <?php wp_nav_menu(array(
+            'theme_location' => 'menu',
+            'container' => '',
+        )); ?>
 	</div>
