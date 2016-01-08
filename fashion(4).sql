@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Янв 08 2016 г., 13:29
+-- Время создания: Янв 08 2016 г., 22:52
 -- Версия сервера: 5.5.45
 -- Версия PHP: 5.3.29
 
@@ -110,7 +110,7 @@ CREATE TABLE IF NOT EXISTS `fa_options` (
   `autoload` varchar(20) NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=195 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=197 ;
 
 --
 -- Дамп данных таблицы `fa_options`
@@ -219,7 +219,7 @@ INSERT INTO `fa_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (101, 'widget_calendar', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (102, 'widget_tag_cloud', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (103, 'widget_nav_menu', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
-(104, 'cron', 'a:4:{i:1452266152;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1452284257;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1452327493;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}s:7:"version";i:2;}', 'yes'),
+(104, 'cron', 'a:4:{i:1452284257;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1452327493;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1452352552;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}s:7:"version";i:2;}', 'yes'),
 (109, '_site_transient_update_core', 'O:8:"stdClass":4:{s:7:"updates";a:1:{i:0;O:8:"stdClass":10:{s:8:"response";s:6:"latest";s:8:"download";s:65:"https://downloads.wordpress.org/release/ru_RU/wordpress-4.4.1.zip";s:6:"locale";s:5:"ru_RU";s:8:"packages";O:8:"stdClass":5:{s:4:"full";s:65:"https://downloads.wordpress.org/release/ru_RU/wordpress-4.4.1.zip";s:10:"no_content";b:0;s:11:"new_bundled";b:0;s:7:"partial";b:0;s:8:"rollback";b:0;}s:7:"current";s:5:"4.4.1";s:7:"version";s:5:"4.4.1";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"4.4";s:15:"partial_version";s:0:"";}}s:12:"last_checked";i:1452242253;s:15:"version_checked";s:5:"4.4.1";s:12:"translations";a:0:{}}', 'yes'),
 (111, '_site_transient_update_plugins', 'O:8:"stdClass":4:{s:12:"last_checked";i:1452242258;s:8:"response";a:0:{}s:12:"translations";a:0:{}s:9:"no_update";a:2:{s:19:"akismet/akismet.php";O:8:"stdClass":6:{s:2:"id";s:2:"15";s:4:"slug";s:7:"akismet";s:6:"plugin";s:19:"akismet/akismet.php";s:11:"new_version";s:5:"3.1.7";s:3:"url";s:38:"https://wordpress.org/plugins/akismet/";s:7:"package";s:56:"https://downloads.wordpress.org/plugin/akismet.3.1.7.zip";}s:9:"hello.php";O:8:"stdClass":6:{s:2:"id";s:4:"3564";s:4:"slug";s:11:"hello-dolly";s:6:"plugin";s:9:"hello.php";s:11:"new_version";s:3:"1.6";s:3:"url";s:42:"https://wordpress.org/plugins/hello-dolly/";s:7:"package";s:58:"https://downloads.wordpress.org/plugin/hello-dolly.1.6.zip";}}}', 'yes'),
 (114, '_site_transient_update_themes', 'O:8:"stdClass":4:{s:12:"last_checked";i:1452242261;s:7:"checked";a:4:{s:7:"fashion";s:0:"";s:13:"twentyfifteen";s:3:"1.4";s:14:"twentyfourteen";s:3:"1.6";s:13:"twentysixteen";s:3:"1.1";}s:8:"response";a:0:{}s:12:"translations";a:0:{}}', 'yes'),
@@ -270,7 +270,7 @@ CREATE TABLE IF NOT EXISTS `fa_postmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `post_id` (`post_id`),
   KEY `meta_key` (`meta_key`(191))
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=297 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=355 ;
 
 --
 -- Дамп данных таблицы `fa_postmeta`
@@ -322,7 +322,7 @@ INSERT INTO `fa_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (51, 17, '_edit_last', '1'),
 (52, 17, '_edit_lock', '1452245337:1'),
 (55, 19, '_edit_last', '1'),
-(56, 19, '_edit_lock', '1452191864:1'),
+(56, 19, '_edit_lock', '1452259641:1'),
 (63, 2, '_wp_trash_meta_status', 'publish'),
 (64, 2, '_wp_trash_meta_time', '1452180345'),
 (65, 24, '_edit_last', '1'),
@@ -459,13 +459,13 @@ INSERT INTO `fa_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (252, 82, '_wp_attached_file', '2016/01/portfolio5.jpg'),
 (253, 82, '_wp_attachment_metadata', 'a:5:{s:5:"width";i:277;s:6:"height";i:118;s:4:"file";s:22:"2016/01/portfolio5.jpg";s:5:"sizes";a:1:{s:9:"thumbnail";a:4:{s:4:"file";s:22:"portfolio5-150x118.jpg";s:5:"width";i:150;s:6:"height";i:118;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:12:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";s:11:"orientation";i:0;s:8:"keywords";a:0:{}}}'),
 (254, 83, '_edit_last', '1'),
-(255, 83, '_edit_lock', '1452247888:1'),
+(255, 83, '_edit_lock', '1452282720:1'),
 (256, 83, '_thumbnail_id', '78'),
 (259, 85, '_edit_last', '1'),
-(260, 85, '_edit_lock', '1452247131:1'),
+(260, 85, '_edit_lock', '1452280554:1'),
 (261, 85, '_thumbnail_id', '79'),
 (264, 87, '_edit_last', '1'),
-(265, 87, '_edit_lock', '1452247259:1'),
+(265, 87, '_edit_lock', '1452280611:1'),
 (266, 87, '_thumbnail_id', '80'),
 (269, 89, '_edit_last', '1'),
 (270, 89, '_edit_lock', '1452247186:1'),
@@ -483,7 +483,31 @@ INSERT INTO `fa_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (292, 95, '_menu_item_target', ''),
 (293, 95, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
 (294, 95, '_menu_item_xfn', ''),
-(295, 95, '_menu_item_url', '');
+(295, 95, '_menu_item_url', ''),
+(297, 96, '_edit_last', '1'),
+(298, 96, '_edit_lock', '1452253813:1'),
+(299, 97, '_wp_attached_file', '2016/01/ex2.jpg'),
+(300, 97, '_wp_attachment_metadata', 'a:5:{s:5:"width";i:278;s:6:"height";i:118;s:4:"file";s:15:"2016/01/ex2.jpg";s:5:"sizes";a:1:{s:9:"thumbnail";a:4:{s:4:"file";s:15:"ex2-150x118.jpg";s:5:"width";i:150;s:6:"height";i:118;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:12:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";s:11:"orientation";i:0;s:8:"keywords";a:0:{}}}'),
+(301, 98, '_wp_attached_file', '2016/01/ex3.jpg'),
+(302, 98, '_wp_attachment_metadata', 'a:5:{s:5:"width";i:277;s:6:"height";i:118;s:4:"file";s:15:"2016/01/ex3.jpg";s:5:"sizes";a:1:{s:9:"thumbnail";a:4:{s:4:"file";s:15:"ex3-150x118.jpg";s:5:"width";i:150;s:6:"height";i:118;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:12:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";s:11:"orientation";i:0;s:8:"keywords";a:0:{}}}'),
+(303, 96, '_thumbnail_id', '97'),
+(306, 100, '_edit_last', '1'),
+(307, 100, '_edit_lock', '1452253867:1'),
+(308, 100, '_thumbnail_id', '98'),
+(337, 112, '_wp_attached_file', '2016/01/1.jpg'),
+(338, 112, '_wp_attachment_metadata', 'a:5:{s:5:"width";i:600;s:6:"height";i:375;s:4:"file";s:13:"2016/01/1.jpg";s:5:"sizes";a:2:{s:9:"thumbnail";a:4:{s:4:"file";s:13:"1-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:13:"1-300x188.jpg";s:5:"width";i:300;s:6:"height";i:188;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:12:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";s:11:"orientation";i:0;s:8:"keywords";a:0:{}}}'),
+(339, 113, '_wp_attached_file', '2016/01/2.jpg'),
+(340, 113, '_wp_attachment_metadata', 'a:5:{s:5:"width";i:600;s:6:"height";i:375;s:4:"file";s:13:"2016/01/2.jpg";s:5:"sizes";a:2:{s:9:"thumbnail";a:4:{s:4:"file";s:13:"2-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:13:"2-300x188.jpg";s:5:"width";i:300;s:6:"height";i:188;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:12:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";s:11:"orientation";i:0;s:8:"keywords";a:0:{}}}'),
+(341, 114, '_wp_attached_file', '2016/01/3.jpg'),
+(342, 114, '_wp_attachment_metadata', 'a:5:{s:5:"width";i:600;s:6:"height";i:375;s:4:"file";s:13:"2016/01/3.jpg";s:5:"sizes";a:2:{s:9:"thumbnail";a:4:{s:4:"file";s:13:"3-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:13:"3-300x188.jpg";s:5:"width";i:300;s:6:"height";i:188;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:12:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";s:11:"orientation";i:0;s:8:"keywords";a:0:{}}}'),
+(343, 115, '_wp_attached_file', '2016/01/4.jpg'),
+(344, 115, '_wp_attachment_metadata', 'a:5:{s:5:"width";i:600;s:6:"height";i:375;s:4:"file";s:13:"2016/01/4.jpg";s:5:"sizes";a:2:{s:9:"thumbnail";a:4:{s:4:"file";s:13:"4-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:13:"4-300x188.jpg";s:5:"width";i:300;s:6:"height";i:188;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:12:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";s:11:"orientation";i:0;s:8:"keywords";a:0:{}}}'),
+(349, 115, '_edit_lock', '1452281586:1'),
+(350, 115, '_wp_attachment_image_alt', 'Текст под фоткой'),
+(351, 115, '_edit_last', '1'),
+(352, 113, '_edit_lock', '1452282196:1'),
+(353, 113, '_wp_attachment_image_alt', '&nbsp;'),
+(354, 113, '_edit_last', '1');
 
 -- --------------------------------------------------------
 
@@ -520,7 +544,7 @@ CREATE TABLE IF NOT EXISTS `fa_posts` (
   KEY `type_status_date` (`post_type`,`post_status`,`post_date`,`ID`),
   KEY `post_parent` (`post_parent`),
   KEY `post_author` (`post_author`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=96 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=118 ;
 
 --
 -- Дамп данных таблицы `fa_posts`
@@ -545,7 +569,7 @@ INSERT INTO `fa_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (16, 1, '2016-01-07 18:18:48', '2016-01-07 15:18:48', '', 'Exhibitions', '', 'inherit', 'closed', 'closed', '', '15-revision-v1', '', '', '2016-01-07 18:18:48', '2016-01-07 15:18:48', '', 15, 'http://fashion/2016/01/07/15-revision-v1/', 0, 'revision', '', 0),
 (17, 1, '2016-01-07 18:20:50', '2016-01-07 15:20:50', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id lacus quis eros ultrices suscipit at ut ligula. Praesent posuere ornare interdum. Pellentesque porttitor hendrerit lorem non tincidunt. Pellentesque eget consectetur nibh. Pellentesque nec venenatis lorem. Donec et erat dolor.\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id lacus quis eros ultrices suscipit at ut ligula. Praesent posuere ornare interdum. Pellentesque porttitor hendrerit lorem non tincidunt. Pellentesque eget consectetur nibh. Pellentesque nec venenatis lorem. Donec et erat dolor.', 'Latest Photo Shoot', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id lacus quis eros ultrices suscipit at ut ligula. Praesent posuere ornare interdum. Pellentesque porttitor hendrerit lorem non tincidunt. Pellentesque eget consectetur nibh. Pellentesque nec venenatis lorem. Donec et erat dolor.', 'publish', 'open', 'open', '', 'latest-photo-shoot', '', '', '2016-01-07 21:34:20', '2016-01-07 18:34:20', '', 0, 'http://fashion/?p=17', 0, 'post', '', 0),
 (18, 1, '2016-01-07 18:20:50', '2016-01-07 15:20:50', '', 'Latest Photo Shoot', '', 'inherit', 'closed', 'closed', '', '17-revision-v1', '', '', '2016-01-07 18:20:50', '2016-01-07 15:20:50', '', 17, 'http://fashion/2016/01/07/17-revision-v1/', 0, 'revision', '', 0),
-(19, 1, '2016-01-07 18:21:29', '2016-01-07 15:21:29', 'Nam egestas sapien molestie lorem auctor eget scelerisque neque tincidunt. Ut iaculis leo non sem can <a href="file:///D:/web/fashion/exhibitions.html#">this is an inline link</a>. Maecenas mi massa, interdum at sagittis eu, imperdiet a dui. Duis sit amet tortor leo. Fusce tempor pellentesque mollis. Sed tincidunt elit sit amet ipsum fermentum venenatis.\r\n\r\nNam egestas sapien molestie lorem auctor eget scelerisque neque tincidunt. Ut iaculis leo non sem can <a href="file:///D:/web/fashion/exhibitions.html#">this is an inline link</a>. Maecenas mi massa, interdum at sagittis eu, imperdiet a dui. Duis sit amet tortor leo. Fusce tempor pellentesque mollis. Sed tincidunt elit sit amet ipsum fermentum venenatis.\r\n\r\nNam egestas sapien molestie lorem auctor eget scelerisque neque tincidunt. Ut iaculis leo non sem can <a href="file:///D:/web/fashion/exhibitions.html#">this is an inline link</a>. Maecenas mi massa, interdum at sagittis eu, imperdiet a dui. Duis sit amet tortor leo. Fusce tempor pellentesque mollis. Sed tincidunt elit sit amet ipsum fermentum venenatis.', 'The Art Of Photography Exhibition', 'Nam egestas sapien molestie lorem auctor eget scelerisque neque tincidunt. Ut iaculis leo non sem can this is an inline link. Maecenas mi massa, interdum at sagittis eu, imperdiet a dui. Duis sit amet tortor leo. Fusce tempor pellentesque mollis. Sed tincidunt elit sit amet ipsum fermentum venenatis.', 'publish', 'open', 'open', '', 'the-art-of-photography-exhibition', '', '', '2016-01-07 21:34:57', '2016-01-07 18:34:57', '', 0, 'http://fashion/?p=19', 0, 'post', '', 0),
+(19, 1, '2016-01-07 18:21:29', '2016-01-07 15:21:29', '<img class="size-full wp-image-66 alignleft" src="http://fashion/wp-content/uploads/2016/01/foto2.jpg" alt="foto2" width="277" height="118" />Nam egestas sapien molestie lorem auctor eget scelerisque neque tincidunt. Ut iaculis leo non sem can <a href="file:///D:/web/fashion/exhibitions.html#">this is an inline link</a>. Maecenas mi massa, interdum at sagittis eu, imperdiet a dui. Duis sit amet tortor leo. Fusce tempor pellentesque mollis. Sed tincidunt elit sit amet ipsum fermentum venenatis.\r\n\r\nNam egestas sapien molestie lorem auctor eget scelerisque neque tincidunt. Ut iaculis leo non sem can <a href="file:///D:/web/fashion/exhibitions.html#">this is an inline link</a>. Maecenas mi massa, interdum at sagittis eu, imperdiet a dui. Duis sit amet tortor leo. Fusce tempor pellentesque mollis. Sed tincidunt elit sit amet ipsum fermentum venenatis.\r\n\r\nNam egestas sapien molestie lorem auctor eget scelerisque neque tincidunt. Ut iaculis leo non sem can <a href="file:///D:/web/fashion/exhibitions.html#">this is an inline link</a>. Maecenas mi massa, interdum at sagittis eu, imperdiet a dui. Duis sit amet tortor leo. Fusce tempor pellentesque mollis. Sed tincidunt elit sit amet ipsum fermentum venenatis.', 'The Art Of Photography Exhibition', 'Nam egestas sapien molestie lorem auctor eget scelerisque neque tincidunt. Ut iaculis leo non sem can this is an inline link. Maecenas mi massa, interdum at sagittis eu, imperdiet a dui. Duis sit amet tortor leo. Fusce tempor pellentesque mollis. Sed tincidunt elit sit amet ipsum fermentum venenatis.', 'publish', 'open', 'open', '', 'the-art-of-photography-exhibition', '', '', '2016-01-08 15:21:14', '2016-01-08 12:21:14', '', 0, 'http://fashion/?p=19', 0, 'post', '', 0),
 (20, 1, '2016-01-07 18:21:29', '2016-01-07 15:21:29', '', 'The Art Of Photography Exhibition', '', 'inherit', 'closed', 'closed', '', '19-revision-v1', '', '', '2016-01-07 18:21:29', '2016-01-07 15:21:29', '', 19, 'http://fashion/2016/01/07/19-revision-v1/', 0, 'revision', '', 0),
 (21, 1, '2016-01-07 18:24:10', '2016-01-07 15:24:10', 'Nam egestas sapien molestie lorem auctor eget scelerisque neque tincidunt. Ut iaculis leo non sem can <a href="file:///D:/web/fashion/exhibitions.html#">this is an inline link</a>. Maecenas mi massa, interdum at sagittis eu, imperdiet a dui. Duis sit amet tortor leo. Fusce tempor pellentesque mollis. Sed tincidunt elit sit amet ipsum fermentum venenatis.\r\n\r\nNam egestas sapien molestie lorem auctor eget scelerisque neque tincidunt. Ut iaculis leo non sem can <a href="file:///D:/web/fashion/exhibitions.html#">this is an inline link</a>. Maecenas mi massa, interdum at sagittis eu, imperdiet a dui. Duis sit amet tortor leo. Fusce tempor pellentesque mollis. Sed tincidunt elit sit amet ipsum fermentum venenatis.\r\n\r\nNam egestas sapien molestie lorem auctor eget scelerisque neque tincidunt. Ut iaculis leo non sem can <a href="file:///D:/web/fashion/exhibitions.html#">this is an inline link</a>. Maecenas mi massa, interdum at sagittis eu, imperdiet a dui. Duis sit amet tortor leo. Fusce tempor pellentesque mollis. Sed tincidunt elit sit amet ipsum fermentum venenatis.', 'The Art Of Photography Exhibition', '', 'inherit', 'closed', 'closed', '', '19-revision-v1', '', '', '2016-01-07 18:24:10', '2016-01-07 15:24:10', '', 19, 'http://fashion/19-revision-v1/', 0, 'revision', '', 0),
 (22, 1, '2016-01-07 18:25:21', '2016-01-07 15:25:21', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id lacus quis eros ultrices suscipit at ut ligula. Praesent posuere ornare interdum. Pellentesque porttitor hendrerit lorem non tincidunt. Pellentesque eget consectetur nibh. Pellentesque nec venenatis lorem. Donec et erat dolor.\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id lacus quis eros ultrices suscipit at ut ligula. Praesent posuere ornare interdum. Pellentesque porttitor hendrerit lorem non tincidunt. Pellentesque eget consectetur nibh. Pellentesque nec venenatis lorem. Donec et erat dolor.', 'Latest Photo Shoot', '', 'inherit', 'closed', 'closed', '', '17-revision-v1', '', '', '2016-01-07 18:25:21', '2016-01-07 15:25:21', '', 17, 'http://fashion/17-revision-v1/', 0, 'revision', '', 0),
@@ -606,9 +630,9 @@ INSERT INTO `fa_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (80, 1, '2016-01-08 12:59:28', '2016-01-08 09:59:28', '', 'portfolio3', '', 'inherit', 'open', 'closed', '', 'portfolio3', '', '', '2016-01-08 12:59:28', '2016-01-08 09:59:28', '', 0, 'http://fashion/wp-content/uploads/2016/01/portfolio3.jpg', 0, 'attachment', 'image/jpeg', 0),
 (81, 1, '2016-01-08 12:59:29', '2016-01-08 09:59:29', '', 'portfolio4', '', 'inherit', 'open', 'closed', '', 'portfolio4', '', '', '2016-01-08 12:59:29', '2016-01-08 09:59:29', '', 0, 'http://fashion/wp-content/uploads/2016/01/portfolio4.jpg', 0, 'attachment', 'image/jpeg', 0),
 (82, 1, '2016-01-08 12:59:31', '2016-01-08 09:59:31', '', 'portfolio5', '', 'inherit', 'open', 'closed', '', 'portfolio5', '', '', '2016-01-08 12:59:31', '2016-01-08 09:59:31', '', 0, 'http://fashion/wp-content/uploads/2016/01/portfolio5.jpg', 0, 'attachment', 'image/jpeg', 0),
-(83, 1, '2016-01-08 13:00:35', '2016-01-08 10:00:35', '', 'portgolio1', '', 'publish', 'open', 'open', '', 'portgolio1', '', '', '2016-01-08 13:13:24', '2016-01-08 10:13:24', '', 0, 'http://fashion/?p=83', 0, 'post', '', 0),
+(83, 1, '2016-01-08 13:00:35', '2016-01-08 10:00:35', '[shortcode_gallery ids="115,114,113"]', 'portgolio1', '', 'publish', 'open', 'open', '', 'portgolio1', '', '', '2016-01-08 22:20:44', '2016-01-08 19:20:44', '', 0, 'http://fashion/?p=83', 0, 'post', '', 0),
 (84, 1, '2016-01-08 13:00:35', '2016-01-08 10:00:35', '', 'portgolio1', '', 'inherit', 'closed', 'closed', '', '83-revision-v1', '', '', '2016-01-08 13:00:35', '2016-01-08 10:00:35', '', 83, 'http://fashion/83-revision-v1/', 0, 'revision', '', 0),
-(85, 1, '2016-01-08 13:01:10', '2016-01-08 10:01:10', '', 'portgolio2', '', 'publish', 'open', 'open', '', 'portgolio2', '', '', '2016-01-08 13:01:10', '2016-01-08 10:01:10', '', 0, 'http://fashion/?p=85', 0, 'post', '', 0),
+(85, 1, '2016-01-08 13:01:10', '2016-01-08 10:01:10', '[shortcode_gallery ids="98,81,80,103"]', 'portgolio2', '', 'publish', 'open', 'open', '', 'portgolio2', '', '', '2016-01-08 22:15:34', '2016-01-08 19:15:34', '', 0, 'http://fashion/?p=85', 0, 'post', '', 0),
 (86, 1, '2016-01-08 13:01:10', '2016-01-08 10:01:10', '', 'portgolio2', '', 'inherit', 'closed', 'closed', '', '85-revision-v1', '', '', '2016-01-08 13:01:10', '2016-01-08 10:01:10', '', 85, 'http://fashion/85-revision-v1/', 0, 'revision', '', 0),
 (87, 1, '2016-01-08 13:01:37', '2016-01-08 10:01:37', '', 'portgolio3', '', 'publish', 'open', 'open', '', 'portgolio3', '', '', '2016-01-08 13:03:17', '2016-01-08 10:03:17', '', 0, 'http://fashion/?p=87', 0, 'post', '', 0),
 (88, 1, '2016-01-08 13:01:37', '2016-01-08 10:01:37', '', 'portgolio3', '', 'inherit', 'closed', 'closed', '', '87-revision-v1', '', '', '2016-01-08 13:01:37', '2016-01-08 10:01:37', '', 87, 'http://fashion/87-revision-v1/', 0, 'revision', '', 0),
@@ -618,7 +642,25 @@ INSERT INTO `fa_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (92, 1, '2016-01-08 13:02:30', '2016-01-08 10:02:30', '', 'portgolio5', '', 'inherit', 'closed', 'closed', '', '91-revision-v1', '', '', '2016-01-08 13:02:30', '2016-01-08 10:02:30', '', 91, 'http://fashion/91-revision-v1/', 0, 'revision', '', 0),
 (93, 1, '2016-01-08 13:03:01', '2016-01-08 10:03:01', '', 'portgolio6', '', 'publish', 'open', 'open', '', 'portgolio6', '', '', '2016-01-08 13:03:01', '2016-01-08 10:03:01', '', 0, 'http://fashion/?p=93', 0, 'post', '', 0),
 (94, 1, '2016-01-08 13:03:01', '2016-01-08 10:03:01', '', 'portgolio6', '', 'inherit', 'closed', 'closed', '', '93-revision-v1', '', '', '2016-01-08 13:03:01', '2016-01-08 10:03:01', '', 93, 'http://fashion/93-revision-v1/', 0, 'revision', '', 0),
-(95, 1, '2016-01-08 13:14:54', '2016-01-08 10:14:54', ' ', '', '', 'publish', 'closed', 'closed', '', '95', '', '', '2016-01-08 13:14:54', '2016-01-08 10:14:54', '', 0, 'http://fashion/?p=95', 3, 'nav_menu_item', '', 0);
+(95, 1, '2016-01-08 13:14:54', '2016-01-08 10:14:54', ' ', '', '', 'publish', 'closed', 'closed', '', '95', '', '', '2016-01-08 13:14:54', '2016-01-08 10:14:54', '', 0, 'http://fashion/?p=95', 3, 'nav_menu_item', '', 0),
+(96, 1, '2016-01-08 14:52:31', '2016-01-08 11:52:31', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id lacus quis eros ultrices suscipit at ut ligula. Praesent posuere ornare interdum. Pellentesque porttitor hendrerit lorem non tincidunt. Pellentesque eget consectetur nibh. Pellentesque nec venenatis lorem. Donec et erat dolor.<!--more-->\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id lacus quis eros ultrices suscipit at ut ligula. Praesent posuere ornare interdum. Pellentesque porttitor hendrerit lorem non tincidunt. Pellentesque eget consectetur nibh. Pellentesque nec venenatis lorem. Donec et erat dolor.\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id lacus quis eros ultrices suscipit at ut ligula. Praesent posuere ornare interdum. Pellentesque porttitor hendrerit lorem non tincidunt. Pellentesque eget consectetur nibh. Pellentesque nec venenatis lorem. Donec et erat dolor.\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id lacus quis eros ultrices suscipit at ut ligula. Praesent posuere ornare interdum. Pellentesque porttitor hendrerit lorem non tincidunt. Pellentesque eget consectetur nibh. Pellentesque nec venenatis lorem. Donec et erat dolor.', 'Another Photography Exhibition', '', 'publish', 'open', 'open', '', 'another-photography-exhibition', '', '', '2016-01-08 14:52:31', '2016-01-08 11:52:31', '', 0, 'http://fashion/?p=96', 0, 'post', '', 0),
+(97, 1, '2016-01-08 14:52:16', '2016-01-08 11:52:16', '', 'ex2', '', 'inherit', 'open', 'closed', '', 'ex2', '', '', '2016-01-08 14:52:16', '2016-01-08 11:52:16', '', 96, 'http://fashion/wp-content/uploads/2016/01/ex2.jpg', 0, 'attachment', 'image/jpeg', 0),
+(98, 1, '2016-01-08 14:52:17', '2016-01-08 11:52:17', '', 'ex3', '', 'inherit', 'open', 'closed', '', 'ex3', '', '', '2016-01-08 14:52:17', '2016-01-08 11:52:17', '', 96, 'http://fashion/wp-content/uploads/2016/01/ex3.jpg', 0, 'attachment', 'image/jpeg', 0),
+(99, 1, '2016-01-08 14:52:31', '2016-01-08 11:52:31', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id lacus quis eros ultrices suscipit at ut ligula. Praesent posuere ornare interdum. Pellentesque porttitor hendrerit lorem non tincidunt. Pellentesque eget consectetur nibh. Pellentesque nec venenatis lorem. Donec et erat dolor.<!--more-->\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id lacus quis eros ultrices suscipit at ut ligula. Praesent posuere ornare interdum. Pellentesque porttitor hendrerit lorem non tincidunt. Pellentesque eget consectetur nibh. Pellentesque nec venenatis lorem. Donec et erat dolor.\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id lacus quis eros ultrices suscipit at ut ligula. Praesent posuere ornare interdum. Pellentesque porttitor hendrerit lorem non tincidunt. Pellentesque eget consectetur nibh. Pellentesque nec venenatis lorem. Donec et erat dolor.\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id lacus quis eros ultrices suscipit at ut ligula. Praesent posuere ornare interdum. Pellentesque porttitor hendrerit lorem non tincidunt. Pellentesque eget consectetur nibh. Pellentesque nec venenatis lorem. Donec et erat dolor.', 'Another Photography Exhibition', '', 'inherit', 'closed', 'closed', '', '96-revision-v1', '', '', '2016-01-08 14:52:31', '2016-01-08 11:52:31', '', 96, 'http://fashion/96-revision-v1/', 0, 'revision', '', 0),
+(100, 1, '2016-01-08 14:53:06', '2016-01-08 11:53:06', 'Donec mollis suscipit nisi, vitae sagittis arcu euismod at. In at turpis vel odio fringilla vulputate at ac tellus. Phasellus nulla leo, vehicula sit amet congue eget, viverra ut augue epharetra aliquet turpis vel scelerisque. Nullam ut enim nisi. Vivamus ut neque nulla. est aliquam consectetur augue et est dapibus.<!--more-->\r\n\r\nDonec mollis suscipit nisi, vitae sagittis arcu euismod at. In at turpis vel odio fringilla vulputate at ac tellus. Phasellus nulla leo, vehicula sit amet congue eget, viverra ut augue epharetra aliquet turpis vel scelerisque. Nullam ut enim nisi. Vivamus ut neque nulla. est aliquam consectetur augue et est dapibus.\r\n\r\nDonec mollis suscipit nisi, vitae sagittis arcu euismod at. In at turpis vel odio fringilla vulputate at ac tellus. Phasellus nulla leo, vehicula sit amet congue eget, viverra ut augue epharetra aliquet turpis vel scelerisque. Nullam ut enim nisi. Vivamus ut neque nulla. est aliquam consectetur augue et est dapibus.\r\n\r\nDonec mollis suscipit nisi, vitae sagittis arcu euismod at. In at turpis vel odio fringilla vulputate at ac tellus. Phasellus nulla leo, vehicula sit amet congue eget, viverra ut augue epharetra aliquet turpis vel scelerisque. Nullam ut enim nisi. Vivamus ut neque nulla. est aliquam consectetur augue et est dapibus.\r\n\r\n&nbsp;', 'Coming Soon!', '', 'publish', 'open', 'open', '', 'coming-soon', '', '', '2016-01-08 14:53:13', '2016-01-08 11:53:13', '', 0, 'http://fashion/?p=100', 0, 'post', '', 0),
+(101, 1, '2016-01-08 14:53:06', '2016-01-08 11:53:06', 'Donec mollis suscipit nisi, vitae sagittis arcu euismod at. In at turpis vel odio fringilla vulputate at ac tellus. Phasellus nulla leo, vehicula sit amet congue eget, viverra ut augue epharetra aliquet turpis vel scelerisque. Nullam ut enim nisi. Vivamus ut neque nulla. est aliquam consectetur augue et est dapibus.<!--more-->\r\n\r\nDonec mollis suscipit nisi, vitae sagittis arcu euismod at. In at turpis vel odio fringilla vulputate at ac tellus. Phasellus nulla leo, vehicula sit amet congue eget, viverra ut augue epharetra aliquet turpis vel scelerisque. Nullam ut enim nisi. Vivamus ut neque nulla. est aliquam consectetur augue et est dapibus.\r\n\r\nDonec mollis suscipit nisi, vitae sagittis arcu euismod at. In at turpis vel odio fringilla vulputate at ac tellus. Phasellus nulla leo, vehicula sit amet congue eget, viverra ut augue epharetra aliquet turpis vel scelerisque. Nullam ut enim nisi. Vivamus ut neque nulla. est aliquam consectetur augue et est dapibus.\r\n\r\nDonec mollis suscipit nisi, vitae sagittis arcu euismod at. In at turpis vel odio fringilla vulputate at ac tellus. Phasellus nulla leo, vehicula sit amet congue eget, viverra ut augue epharetra aliquet turpis vel scelerisque. Nullam ut enim nisi. Vivamus ut neque nulla. est aliquam consectetur augue et est dapibus.\r\n\r\n&nbsp;', 'Coming Soon!', '', 'inherit', 'closed', 'closed', '', '100-revision-v1', '', '', '2016-01-08 14:53:06', '2016-01-08 11:53:06', '', 100, 'http://fashion/100-revision-v1/', 0, 'revision', '', 0),
+(102, 1, '2016-01-08 15:21:14', '2016-01-08 12:21:14', '<img class="size-full wp-image-66 alignleft" src="http://fashion/wp-content/uploads/2016/01/foto2.jpg" alt="foto2" width="277" height="118" />Nam egestas sapien molestie lorem auctor eget scelerisque neque tincidunt. Ut iaculis leo non sem can <a href="file:///D:/web/fashion/exhibitions.html#">this is an inline link</a>. Maecenas mi massa, interdum at sagittis eu, imperdiet a dui. Duis sit amet tortor leo. Fusce tempor pellentesque mollis. Sed tincidunt elit sit amet ipsum fermentum venenatis.\r\n\r\nNam egestas sapien molestie lorem auctor eget scelerisque neque tincidunt. Ut iaculis leo non sem can <a href="file:///D:/web/fashion/exhibitions.html#">this is an inline link</a>. Maecenas mi massa, interdum at sagittis eu, imperdiet a dui. Duis sit amet tortor leo. Fusce tempor pellentesque mollis. Sed tincidunt elit sit amet ipsum fermentum venenatis.\r\n\r\nNam egestas sapien molestie lorem auctor eget scelerisque neque tincidunt. Ut iaculis leo non sem can <a href="file:///D:/web/fashion/exhibitions.html#">this is an inline link</a>. Maecenas mi massa, interdum at sagittis eu, imperdiet a dui. Duis sit amet tortor leo. Fusce tempor pellentesque mollis. Sed tincidunt elit sit amet ipsum fermentum venenatis.', 'The Art Of Photography Exhibition', 'Nam egestas sapien molestie lorem auctor eget scelerisque neque tincidunt. Ut iaculis leo non sem can this is an inline link. Maecenas mi massa, interdum at sagittis eu, imperdiet a dui. Duis sit amet tortor leo. Fusce tempor pellentesque mollis. Sed tincidunt elit sit amet ipsum fermentum venenatis.', 'inherit', 'closed', 'closed', '', '19-revision-v1', '', '', '2016-01-08 15:21:14', '2016-01-08 12:21:14', '', 19, 'http://fashion/19-revision-v1/', 0, 'revision', '', 0),
+(107, 1, '2016-01-08 20:13:25', '2016-01-08 17:13:25', '[gallery ids="106,105,104,103"]', 'portgolio1', '', 'inherit', 'closed', 'closed', '', '83-autosave-v1', '', '', '2016-01-08 20:13:25', '2016-01-08 17:13:25', '', 83, 'http://fashion/83-autosave-v1/', 0, 'revision', '', 0),
+(108, 1, '2016-01-08 20:14:27', '2016-01-08 17:14:27', '[gallery ids="106,105,104,103"]', 'portgolio1', '', 'inherit', 'closed', 'closed', '', '83-revision-v1', '', '', '2016-01-08 20:14:27', '2016-01-08 17:14:27', '', 83, 'http://fashion/83-revision-v1/', 0, 'revision', '', 0),
+(109, 1, '2016-01-08 20:16:51', '2016-01-08 17:16:51', '[shortcode_gallery ids="106,105,104,103"]', 'portgolio1', '', 'inherit', 'closed', 'closed', '', '83-revision-v1', '', '', '2016-01-08 20:16:51', '2016-01-08 17:16:51', '', 83, 'http://fashion/83-revision-v1/', 0, 'revision', '', 0),
+(110, 1, '2016-01-08 22:13:42', '2016-01-08 19:13:42', '[shortcode_gallery ids="98,81,80"]', 'portgolio2', '', 'inherit', 'closed', 'closed', '', '85-revision-v1', '', '', '2016-01-08 22:13:42', '2016-01-08 19:13:42', '', 85, 'http://fashion/85-revision-v1/', 0, 'revision', '', 0),
+(111, 1, '2016-01-08 22:15:34', '2016-01-08 19:15:34', '[shortcode_gallery ids="98,81,80,103"]', 'portgolio2', '', 'inherit', 'closed', 'closed', '', '85-revision-v1', '', '', '2016-01-08 22:15:34', '2016-01-08 19:15:34', '', 85, 'http://fashion/85-revision-v1/', 0, 'revision', '', 0),
+(112, 1, '2016-01-08 22:18:43', '2016-01-08 19:18:43', '', '1', '', 'inherit', 'open', 'closed', '', '1-2', '', '', '2016-01-08 22:18:43', '2016-01-08 19:18:43', '', 0, 'http://fashion/wp-content/uploads/2016/01/1.jpg', 0, 'attachment', 'image/jpeg', 0),
+(113, 1, '2016-01-08 22:18:44', '2016-01-08 19:18:44', '', '2', '', 'inherit', 'open', 'closed', '', '2-2', '', '', '2016-01-08 22:37:15', '2016-01-08 19:37:15', '', 0, 'http://fashion/wp-content/uploads/2016/01/2.jpg', 0, 'attachment', 'image/jpeg', 0),
+(114, 1, '2016-01-08 22:18:46', '2016-01-08 19:18:46', '', '3', '', 'inherit', 'open', 'closed', '', '3-2', '', '', '2016-01-08 22:18:46', '2016-01-08 19:18:46', '', 0, 'http://fashion/wp-content/uploads/2016/01/3.jpg', 0, 'attachment', 'image/jpeg', 0),
+(115, 1, '2016-01-08 22:18:48', '2016-01-08 19:18:48', '', '4', '', 'inherit', 'open', 'closed', '', '4-2', '', '', '2016-01-08 22:34:28', '2016-01-08 19:34:28', '', 0, 'http://fashion/wp-content/uploads/2016/01/4.jpg', 0, 'attachment', 'image/jpeg', 0),
+(116, 1, '2016-01-08 22:19:40', '2016-01-08 19:19:40', '[shortcode_gallery ids="115,114,113,112"]', 'portgolio1', '', 'inherit', 'closed', 'closed', '', '83-revision-v1', '', '', '2016-01-08 22:19:40', '2016-01-08 19:19:40', '', 83, 'http://fashion/83-revision-v1/', 0, 'revision', '', 0),
+(117, 1, '2016-01-08 22:20:44', '2016-01-08 19:20:44', '[shortcode_gallery ids="115,114,113"]', 'portgolio1', '', 'inherit', 'closed', 'closed', '', '83-revision-v1', '', '', '2016-01-08 22:20:44', '2016-01-08 19:20:44', '', 83, 'http://fashion/83-revision-v1/', 0, 'revision', '', 0);
 
 -- --------------------------------------------------------
 
@@ -701,7 +743,9 @@ INSERT INTO `fa_term_relationships` (`object_id`, `term_taxonomy_id`, `term_orde
 (89, 3, 0),
 (91, 3, 0),
 (93, 3, 0),
-(95, 6, 0);
+(95, 6, 0),
+(96, 4, 0),
+(100, 4, 0);
 
 -- --------------------------------------------------------
 
@@ -729,7 +773,7 @@ INSERT INTO `fa_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `desc
 (1, 1, 'category', '', 0, 0),
 (2, 2, 'category', '', 0, 2),
 (3, 3, 'category', '', 0, 6),
-(4, 4, 'category', '', 0, 1),
+(4, 4, 'category', '', 0, 3),
 (6, 6, 'nav_menu', '', 0, 5);
 
 -- --------------------------------------------------------
@@ -746,7 +790,7 @@ CREATE TABLE IF NOT EXISTS `fa_usermeta` (
   PRIMARY KEY (`umeta_id`),
   KEY `user_id` (`user_id`),
   KEY `meta_key` (`meta_key`(191))
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=28 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=30 ;
 
 --
 -- Дамп данных таблицы `fa_usermeta`
@@ -766,7 +810,7 @@ INSERT INTO `fa_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (11, 1, 'fa_user_level', '10'),
 (12, 1, 'dismissed_wp_pointers', ''),
 (13, 1, 'show_welcome_panel', '1'),
-(14, 1, 'session_tokens', 'a:3:{s:64:"8e3414439f86d677220db93f478a39b8df0ee50daf8203ae72755adc95ecc776";a:4:{s:10:"expiration";i:1452327464;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:72:"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0";s:5:"login";i:1452154664;}s:64:"171af750df580857b4b30b64731d5f4836402d6cc5b48e8a25d0919a3cd7b6fa";a:4:{s:10:"expiration";i:1452351984;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:72:"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0";s:5:"login";i:1452179184;}s:64:"462c22a151318cdde24a36bdcb0df0a35913158c0bb7169794c8c22d5704af19";a:4:{s:10:"expiration";i:1452415077;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:72:"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0";s:5:"login";i:1452242277;}}'),
+(14, 1, 'session_tokens', 'a:4:{s:64:"8e3414439f86d677220db93f478a39b8df0ee50daf8203ae72755adc95ecc776";a:4:{s:10:"expiration";i:1452327464;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:72:"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0";s:5:"login";i:1452154664;}s:64:"171af750df580857b4b30b64731d5f4836402d6cc5b48e8a25d0919a3cd7b6fa";a:4:{s:10:"expiration";i:1452351984;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:72:"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0";s:5:"login";i:1452179184;}s:64:"462c22a151318cdde24a36bdcb0df0a35913158c0bb7169794c8c22d5704af19";a:4:{s:10:"expiration";i:1452415077;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:72:"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0";s:5:"login";i:1452242277;}s:64:"292e1d36940da13b53b3b052940faa991c2ecfebf97a7fb298312512d462cfec";a:4:{s:10:"expiration";i:1452445595;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:72:"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0";s:5:"login";i:1452272795;}}'),
 (15, 1, 'fa_dashboard_quick_press_last_post_id', '3'),
 (16, 1, 'managenav-menuscolumnshidden', 'a:5:{i:0;s:11:"link-target";i:1;s:11:"css-classes";i:2;s:3:"xfn";i:3;s:11:"description";i:4;s:15:"title-attribute";}'),
 (17, 1, 'metaboxhidden_nav-menus', 'a:1:{i:0;s:12:"add-post_tag";}'),
@@ -776,10 +820,12 @@ INSERT INTO `fa_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (21, 1, 'metaboxhidden_page', 'a:4:{i:0;s:16:"commentstatusdiv";i:1;s:11:"commentsdiv";i:2;s:7:"slugdiv";i:3;s:9:"authordiv";}'),
 (22, 1, 'meta-box-order_page', 'a:3:{s:4:"side";s:23:"submitdiv,pageparentdiv";s:6:"normal";s:57:"postcustom,commentstatusdiv,commentsdiv,slugdiv,authordiv";s:8:"advanced";s:0:"";}'),
 (23, 1, 'screen_layout_page', '2'),
-(24, 1, 'fa_user-settings', 'editor_expand=on&editor=tinymce&libraryContent=browse&hidetb=0'),
-(25, 1, 'fa_user-settings-time', '1452245539'),
+(24, 1, 'fa_user-settings', 'editor_expand=on&editor=html&libraryContent=browse&hidetb=0'),
+(25, 1, 'fa_user-settings-time', '1452273265'),
 (26, 1, 'closedpostboxes_post', 'a:0:{}'),
-(27, 1, 'metaboxhidden_post', 'a:6:{i:0;s:12:"revisionsdiv";i:1;s:13:"trackbacksdiv";i:2;s:16:"commentstatusdiv";i:3;s:11:"commentsdiv";i:4;s:7:"slugdiv";i:5;s:9:"authordiv";}');
+(27, 1, 'metaboxhidden_post', 'a:6:{i:0;s:12:"revisionsdiv";i:1;s:13:"trackbacksdiv";i:2;s:16:"commentstatusdiv";i:3;s:11:"commentsdiv";i:4;s:7:"slugdiv";i:5;s:9:"authordiv";}'),
+(28, 1, 'closedpostboxes_attachment', 'a:0:{}'),
+(29, 1, 'metaboxhidden_attachment', 'a:2:{i:0;s:7:"slugdiv";i:1;s:9:"authordiv";}');
 
 -- --------------------------------------------------------
 

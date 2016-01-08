@@ -109,6 +109,7 @@
 			showCaption(sItemShowIndex)
 			var slidikSize = function(){
 				slidik.css({height:slidik.width() / sImgK});
+                                //slidik.css({height:597});
 			};
 			slidikSize();
 			sItemShow.fadeIn(p.duration);

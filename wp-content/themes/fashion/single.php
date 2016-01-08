@@ -1,4 +1,4 @@
-<?php get_header('page'); ?>
+<?php get_header('portfolio-page'); ?>
 
     <div class="content-main">
     
@@ -12,4 +12,4 @@
     </div>    
 </div>
 
-<?php get_footer('page'); ?>
+<?php get_footer(); ?>
