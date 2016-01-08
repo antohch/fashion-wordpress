@@ -16,12 +16,29 @@
         </div>
 
         <div class="sidebar">
-            <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/foto4.jpg" alt="" /></a>
+<!--            <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/foto4.jpg" alt="" /></a>
             <h1><a href="#">Skill Set</a></h1>
             <p>Sed dolor ligula, tempus vitae malesuada utescu
             congue vitae diam. Integer non nisl est. Suspen
             isse at diam turpis, ut mattis velit. Praesent vel est non augue pretium condimentum at in mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in varius ante. Etiam et nisi eget velit dignissim gravida ac nec quam. Aenean imperdiet massa quis diam tempunec.</p>
-            <p><a href="#" class="read-more">read more</a></p>
+            <p><a href="#" class="read-more">read more</a></p>-->
+            <?php 
+            $args = array(
+                        'post-type' => 'post',//выводить только посты
+                        'orderby' => 'rand',//случайном порядке
+                        'category_name' => 'photoshoot,Exhibitions',//выводить только из определенных рубрик
+                        'posts_per_page' => 1,//выводить только одину запись
+            )?>
+            <?php $rand_post = new WP_Query($args); ?>
+            <?php if ($rand_post->have_posts()): while($rand_post->have_posts()): $rand_post->the_post();//проверка на посты; этим циклом выводятся все посты ?>
+                <a href="<?php the_permalink();//вывод ссылки ?>"><?php the_post_thumbnail(); //вывод миниатюры?></a>
+                <a href="<?php the_permalink();//вывод ссылки ?>"><h1><?php the_title(); //вывод заголовка ?></h1></a>
+                <?php the_excerpt(); //вывод записи до more или цитаты?>
+                <p><a href="<?php the_permalink();//вывод ссылки ?>" class="read-more">read more</a></p>
+            <?php endwhile; ?>
+            <?php else: ?>
+                <p>Выводятся записи из рубрик: photoshoot, Exhibitions</p>
+            <?php endif; ?>
         </div>
     </div>
 </div>
