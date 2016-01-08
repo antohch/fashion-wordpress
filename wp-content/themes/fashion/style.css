@@ -157,6 +157,8 @@ h1, h2, h3, h4, h5, h6{
 .content-left{
 	float:left; width:607px; padding: 0 20px 0 10px;
 }
+
+
 .sidebar{
 	float:right; width:283px; margin-right:21px;
 }
@@ -229,4 +231,7 @@ h1, h2, h3, h4, h5, h6{
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
+}
+.clear{
+    clear:both;
 }
