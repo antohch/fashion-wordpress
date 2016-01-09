@@ -1,6 +1,7 @@
 <?php get_header('page'); ?>
     <div class="content-main">
             <div class="content-main-bocks">
+                <?php $i = 1;?>
                 <?php if (have_posts()): while(have_posts()): the_post();//проверка на посты; этим циклом выводятся все посты ?>
                     <div>
                         <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
@@ -19,6 +20,13 @@
                         <?php the_excerpt(); ?>
                         <p><a href="<?php the_permalink(); ?>" class="read-more">read more</a></p>
                     </div>
+                <?php
+                    if($i == 3){
+                        echo "<div class='clear'></div>";
+                        $i = 1;
+                    }
+                    $i++;
+                ?>
                 <?php endwhile; ?>
                 <?php else: ?>
                 <?php endif; ?>
