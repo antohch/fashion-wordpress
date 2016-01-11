@@ -98,3 +98,11 @@ function them2_gallery($attr, $text = ''){
     echo $return;
 }
 add_shortcode('shortcode_gallery', 'them2_gallery');
+
+//удалить размеры картинок
+function remote_width_attribute($html){
+	$html = preg_replace('/(width|height)="\d*\"\s(width|height)="\d*"/', "", $html);
+	return $html;
+}
+add_filter('post_thumbnail_html', 'remote_width_attribute', 10);
+add_filter('image_send_to_editor', 'remote_width_attribute', 10);
