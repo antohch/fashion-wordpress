@@ -156,15 +156,15 @@ h1, h2, h3, h4, h5, h6{
 	display:block;
 }
 .content-left{
-	float:left; width:607px; padding: 0 20px 0 10px;
+	float:left; width:63.229%; padding: 0 2.08% 0 1.04%;
 }
 
 
 .sidebar{
-	float:right; width:283px; margin-right:21px;
+	float:right; width:29.5%; margin-right:2.1875%;
 }
 .img-left{
-	float:left; margin: 0 20px 0 0 !important;
+	float:left; margin: 0 2.08333333333333% 0 0 !important;
 }
 
 /* contact page*/
@@ -263,5 +263,19 @@ h1, h2, h3, h4, h5, h6{
 	}
 	.menu{
 		margin: 20px 0 0 0;
+	}
+	.content-left{
+		float:none; width:95%; padding: 0 2.5% 5% 2.5%;
+	}
+
+
+	.sidebar{
+		float:none; width:95%; padding: 0 2.5%;
+	}
+	.sidebar img{
+		float:left; margin: 0 2.5% 0 0; width:38%
+	}
+	.sidebar h1{
+		margin-left:40.5%;
 	}
 }
