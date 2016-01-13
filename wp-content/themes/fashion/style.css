@@ -178,13 +178,13 @@ h1, h2, h3, h4, h5, h6{
 		font-size:17px; color:#565656;
 	}
 	.contact-form label{
-		width:150px; display:block; float:left;
+		width:25%; display:block; float:left;
 	}
 	.contact-form input[type=text], .contact-form input[type=email]{
-		width:300px; padding:6px 20px; background:rgba(0,0,0,0.6); border:1px solid rgba(0,0,0,0.6); color:#fff; font-size:17px; border-radius:10px;
+		width:55%; padding:6px 20px; background:rgba(0,0,0,0.6); border:1px solid rgba(0,0,0,0.6); color:#fff; font-size:17px; border-radius:10px;
 	}
 	.contact-form textarea{
-		width:410px; height:150px; padding:6px 20px; background:rgba(0,0,0,0.6); border:1px solid rgba(0,0,0,0.6); color:#fff; font-size:17px; border-radius:10px; resize:none;
+		width:55%; height:150px; padding:6px 20px; background:rgba(0,0,0,0.6); border:1px solid rgba(0,0,0,0.6); color:#fff; font-size:17px; border-radius:10px; resize:none;
 	}
 	input:focus{
 		border:1px solid #484848!important; outline: none;
@@ -281,8 +281,32 @@ h1, h2, h3, h4, h5, h6{
 	.sidebar h1{
 		margin-left:40.5%;
 	}
+	body{
+		height:auto!important;
+		height:100%;
+		min-height:100%;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#151515+0,151515+100&0+48,1+65,1+100 */
+		background: -moz-linear-gradient(top, rgba(21,21,21,0) 0%, rgba(21,21,21,0) 200px, rgba(21,21,21,1) 300px, rgba(21,21,21,1) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, rgba(21,21,21,0) 0%,rgba(21,21,21,0) 200px,rgba(21,21,21,1) 300px,rgba(21,21,21,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, rgba(21,21,21,0) 0%,rgba(21,21,21,0) 200px,rgba(21,21,21,1) 300px,rgba(21,21,21,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00151515', endColorstr='#151515',GradientType=0 ); /* IE6-9 */
+		font-family:Arial, Helvetica, sans-serif;
+		line-height:1.5;
+	}
 }
 @media only screen and (max-width:482px){
+	.content-main-bocks div img{
+		float:left; margin: 0 0 20px 0 ; width:100%
+	}
+	.content-main-bocks div h1{
+		margin-left:0%;
+	}	
+	.sidebar img{
+		float:left; margin: 0 0 20px 0 ; width:100%
+	}
+	.sidebar h1{
+		margin-left:0%;
+	}
 	#menu ul{
 		display:none;
 	}
@@ -309,4 +333,28 @@ h1, h2, h3, h4, h5, h6{
 		top:12px;
 		right:3%;
 	}	
+	.logo{
+		margin: 20px auto; width:50%; display:block;
+	}
+	.elastislide-horizontal{
+		display:none;
+	}
+	.portfolio-image{
+		float:none; margin:0 0 30px 0; width:100%;
+	}
+	.portfolio-image img{
+		width:100%;
+	}
+	.portfolio-image:nth-child(2n){
+		float:none;
+	}
+	.contact-form label{
+		width:90%; display:block; float:none;
+	}
+	.contact-form input[type=text], .contact-form input[type=email]{
+		width:70%; padding:6px 20px; background:rgba(0,0,0,0.6); border:1px solid rgba(0,0,0,0.6); color:#fff; font-size:17px; border-radius:10px;
+	}
+	.contact-form textarea{
+		width:70%; height:150px; padding:6px 20px; background:rgba(0,0,0,0.6); border:1px solid rgba(0,0,0,0.6); color:#fff; font-size:17px; border-radius:10px; resize:none;
+	}
 }
