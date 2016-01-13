@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url');?>" />
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/liSlidik.css" />
 <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/liSlidik.blackClasic.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
